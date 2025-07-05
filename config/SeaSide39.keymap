@@ -21,11 +21,25 @@
     combos { compatible = "zmk,combos"; };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        macro1: macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N1 &kp N1 &kp N1>;
+            label = "MACRO1";
+        };
+
+        macro2: macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp A &kp S &kp A &kp N1 &kp N9 &kp N8 &kp N0>;
+            label = "MACRO2";
+        };
+
+        macro0: macro0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp A &kp S &kp A &kp G &kp O &kp N &kp T &kp A &kp NUMBER_3>;
+            label = "MACRO0";
         };
     };
 
@@ -37,6 +51,14 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+        };
+
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <120>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
         };
     };
 
