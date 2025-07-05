@@ -78,10 +78,10 @@
 
         SYMBOL {
             bindings = <
-&kp PRCNT  &kp DOLLAR  &kp AMPERSAND  &kp CARET        &kp FSLH                             &kp BSLH        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
-&kp AT     &kp HASH    &kp ASTERISK   &kp PLUS         &kp EQUAL                            &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI       &kp COLON
-&kp GRAVE  &kp TILDE   &kp MINUS      &kp EXCLAMATION  &kp QUESTION                         &kp PIPE        &kp LBKT              &kp RBKT               &kp SQT        &kp DOUBLE_QUOTES
-&trans     &trans      &trans         &trans           &trans        &trans      &kp COMMA  &kp PERIOD                                                                  &kp ESC
+&kp ESC        &trans              &kp UP_ARROW      &trans               &kp LEFT_BRACKET                                  &kp RIGHT_BRACKET      &kp LG(W)           &msc SCRL_UP    &kp LG(T)            &kp BACKSPACE
+&lt 4 K_SLEEP  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp LEFT_BRACE                                    &kp RIGHT_BRACE        &mkp LCLK           &msc SCRL_DOWN  &mkp RCLK            &trans
+&kp GRAVE      &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &kp LEFT_PARENTHESIS                              &kp RIGHT_PARENTHESIS  &kp LG(LEFT_ARROW)  &trans          &kp LG(RIGHT_ARROW)  &trans
+&kp F13        &trans              &trans            &trans               &trans                &trans      &msc SCRL_LEFT  &msc SCRL_RIGHT                                                                 &kp LG(BACKSPACE)
             >;
         };
 
