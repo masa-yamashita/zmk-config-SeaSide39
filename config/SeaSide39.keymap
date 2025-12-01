@@ -18,7 +18,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        f13 {
+            bindings = <&kp F13>;
+            key-positions = <12 13>;
+        };
+    };
 
     macros {
         macro1: macro1 {
@@ -69,7 +76,7 @@
 
         MOUSE_ARROW {
             bindings = <
-&kp ESC        &trans              &kp UP_ARROW      &trans               &kp LEFT_BRACKET                                  &kp RIGHT_BRACKET      &kp LG(W)           &msc SCRL_UP    &kp LG(T)            &kp BACKSPACE
+&kp ESC        &kp LG(LEFT_ARROW)  &kp UP_ARROW      &kp LG(RIGHT_ARROW)  &kp LEFT_BRACKET                                  &kp RIGHT_BRACKET      &kp LG(W)           &msc SCRL_UP    &kp LG(T)            &kp BACKSPACE
 &lt 4 K_SLEEP  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp LEFT_BRACE                                    &kp RIGHT_BRACE        &mkp LCLK           &msc SCRL_DOWN  &mkp RCLK            &trans
 &kp GRAVE      &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &kp LEFT_PARENTHESIS                              &kp RIGHT_PARENTHESIS  &kp LG(LEFT_ARROW)  &trans          &kp LG(RIGHT_ARROW)  &trans
 &kp F13        &trans              &trans            &trans               &trans                &trans      &msc SCRL_LEFT  &msc SCRL_RIGHT                                                                 &kp LG(BACKSPACE)
