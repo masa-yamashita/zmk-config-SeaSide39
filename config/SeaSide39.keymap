@@ -25,6 +25,11 @@
             bindings = <&kp F13>;
             key-positions = <12 13>;
         };
+
+        sleep {
+            bindings = <&kp LA(LG(K_POWER))>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
